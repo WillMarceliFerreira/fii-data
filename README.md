@@ -1,11 +1,12 @@
-# Analisador de Fundos Imobiliários
+# README.md
 
-Este projeto é um analisador de fundos imobiliários que extrai dados do site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) e realiza diversas análises, como verificar informações adicionais do Yahoo Finance, calcular o preço teto e analisar as correlações entre os fundos. O resultado é armazenado em um arquivo CSV.
+## Analisador de Fundos Imobiliários
 
-## Requisitos
+Este projeto tem como objetivo analisar Fundos Imobiliários (FIIs) listados na B3. Ele extrai informações de fundos disponíveis no site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) e adiciona informações complementares do Yahoo Finance.
 
-- Python 3.6 ou superior
-- Pandas
+### Bibliotecas Utilizadas
+
+- pandas
 - urllib
 - yfinance
 - re
@@ -13,24 +14,30 @@ Este projeto é um analisador de fundos imobiliários que extrai dados do site [
 - threading
 - requests
 - BeautifulSoup
+- logging
 
-## Instalação
+### Funcionalidades
 
-1. Clone este repositório ou baixe o arquivo .zip
-2. Instale as dependências necessárias:
+- Extração de dados dos fundos imobiliários
+- Limpeza e transformação dos dados
+- Busca de informações complementares no Yahoo Finance
+- Análise de correlação entre variáveis
+- Interface gráfica simples para iniciar a análise
 
-**pip install pandas urllib3 yfinance re PySimpleGUI requests beautifulsoup4**
+### Como executar
 
-## Como usar
+1. Instale as bibliotecas necessárias usando o comando:
 
-1. Execute o arquivo `analisador_fundos.py`
-2. Clique no botão "Iniciar Análise"
-3. Aguarde a conclusão da análise e verifique o arquivo gerado `fii_teste.csv`
+```bash
+pip install pandas urllib yfinance re PySimpleGUI threading requests BeautifulSoup logging
+```
 
-## Funções
+2. Execute o script Python:
 
-- `extrair_tabela_fundos(url)`: Extrai a tabela de fundos do site Funds Explorer
-- `data_cleaning(funds_df)`: Limpa os dados ausentes do DataFrame
-- `data_transform(funds_df)`: Transforma os dados do DataFrame
-- `buscar_info_aux(funds_df)`: Busca informações adicionais do Yahoo Finance
-- `run_analise()`: Executa a análise completa e salva o resultado em um arquivo CSV
+```bash
+python analisador_fundos_imobiliarios.py
+```
+
+3. Clique no botão "Iniciar Análise" para começar a análise dos fundos imobiliários. O progresso será exibido na barra de progresso.
+
+Após a análise ser concluída com sucesso, um arquivo CSV chamado fii_data.csv será criado com as informações dos fundos imobiliários analisados.
