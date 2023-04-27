@@ -21,7 +21,6 @@ Este projeto tem como objetivo analisar Fundos Imobiliários (FIIs) listados na 
 - Extração de dados dos fundos imobiliários
 - Limpeza e transformação dos dados
 - Busca de informações complementares no Yahoo Finance
-- Análise de correlação entre variáveis
 - Interface gráfica simples para iniciar a análise
 
 ### Como executar
