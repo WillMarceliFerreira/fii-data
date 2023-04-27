@@ -1,10 +1,8 @@
-# README.md
-
-## Analisador de Fundos Imobiliários
+# Analisador de Fundos Imobiliários
 
 Este projeto tem como objetivo analisar Fundos Imobiliários (FIIs) listados na B3. Ele extrai informações de fundos disponíveis no site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) e adiciona informações complementares do Yahoo Finance.
 
-### Bibliotecas Utilizadas
+## Bibliotecas Utilizadas
 
 - pandas
 - urllib
@@ -16,14 +14,14 @@ Este projeto tem como objetivo analisar Fundos Imobiliários (FIIs) listados na 
 - BeautifulSoup
 - logging
 
-### Funcionalidades
+## Funcionalidades
 
 - Extração de dados dos fundos imobiliários
 - Limpeza e transformação dos dados
 - Busca de informações complementares no Yahoo Finance
 - Interface gráfica simples para iniciar a análise
 
-### Como executar
+## Como executar
 
 1. Instale as bibliotecas necessárias usando o comando:
 
