@@ -19,7 +19,7 @@ Este projeto é um analisador de fundos imobiliários que extrai dados do site [
 1. Clone este repositório ou baixe o arquivo .zip
 2. Instale as dependências necessárias:
 
-pip install pandas urllib3 yfinance re PySimpleGUI requests beautifulsoup4
+**pip install pandas urllib3 yfinance re PySimpleGUI requests beautifulsoup4**
 
 ## Como usar
 
